@@ -7,6 +7,8 @@ def clearBanWord(message):
             dot = message.lower().find(word)
             message = message[:dot] + '*' * len(word) + message[dot + len(word):]
 
+    return message
+
 
 def isBanWord(message):
     for word in LISTBANWORD:
